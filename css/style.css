@@ -1,0 +1,166 @@
+section{
+    height:100vh;
+    width: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-attachment: fixed;
+}
+
+/*START OF MAIN PAGE*/
+.page{
+  background-image: url('../images/Background-main.jpg');
+  background-size: cover;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Navmenu {
+  text-align: right;
+  margin-right: 40px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #42455a;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #00c2cb;
+}
+
+header nav a {
+  padding: 10px 20px;
+  font-size: 2rem;
+  color: #e0ffff;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+}
+
+header nav a:hover,header nav a.active {
+  background: #00c2cb;
+  color: #42455a;
+  transition: 0.5s ease-out;
+  letter-spacing: 2px;
+}
+
+.Hello-drop-main {
+  display: flex;
+  font-size: 15rem;
+  margin: 1.5rem;
+  justify-content: center;
+  font-family: "Russo One", sans-serif;
+  color: ghostwhite;
+  position: static;
+}
+
+.ctnt-main {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+.H {
+    opacity: 0;
+    animation: drop 0.4s linear forwards;
+}
+.E {
+    opacity: 0;
+    animation: drop 0.4s linear forwards 0.2s;
+}
+.L {
+    opacity: 0;
+    animation: drop 0.4s linear forwards 0.4s;
+}
+.L1 {
+    opacity: 0;
+    animation: drop 0.4s linear forwards 0.6s;
+}
+.O {
+    opacity: 0;
+    animation: drop 0.4s linear forwards 0.8s;
+}
+.O1 {
+    opacity: 0;
+    animation: drop 0.4s linear forwards 1.0s;
+}
+@keyframes drop {
+    0% {  transform: translateY(-200px);   opacity: 0;}
+    50% { transform: translateY(0px);      opacity: 1;}
+    65% { transform: translateY(-17px);    opacity: 1;}
+    75% { transform: translateY(-22px);    opacity: 1;}
+    100% {transform: translateY(0px);      opacity: 1;}
+}
+
+h1 {
+  color: white;
+  animation: chainReaction 6s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  text-align: center;
+  font-family: Beautiful ES;
+  font-size: 45px;
+  font-weight: medium;
+  position: static;
+}
+
+@keyframes chainReaction {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn-nxt {
+  text-decoration: none;
+  padding: 12px 20px;
+  color: white;
+  position: static;
+  text-align: center;
+}
+
+/*END OF MAIN PAGE*/
+
+/*-------------------------------------------------------------*/
+
+/* SECOND PAGE */
+.page2 {
+  background-color: whitesmoke;
+}
+.about-infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  font-size: 35px;
+}
+.infos2 {
+  text-decoration: underline;
+}
+
+/*END OF SECOND PAGE*/
+
+/*-------------------------------------------------------------*/
+
+/*THIRD PAGE*/
+
+.page3 {
+  background-image: url('../images/Background-main.jpg');
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/*END OF THIRD PAGE*/
+
+/*-------------------------------------------------------------*/
